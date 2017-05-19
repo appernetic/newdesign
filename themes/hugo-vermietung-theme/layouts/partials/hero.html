@@ -1,0 +1,59 @@
+{{ "<!-- Hero Video -->" | safeHTML }}
+<header>
+  <section class="video v-center">
+    <div id="bgVideo" class="background" ><video id="video_background" preload="auto" autoplay="autoplay" loop="loop" poster="{{ .Site.BaseURL }}img/grass.jpg"><source src="{{ .Site.BaseURL }}grassplay.mp4" type="video/mp4">bgvideo</video></div>
+      <div>
+        <div class="hero-unit">
+          <div class="container">
+            <h1 class="hero-title-lg">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
+            <h2 class="title text-left">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+            <div class="row card-header">
+              <div class="col-lg-3 col-md-4 col-md-height col-bottom vermietung">
+                <ul class="list-unstyled list-inline list-cards" >
+                  <li class="card js-card-rent text-center">
+                    {{ with .Site.Params.cardleft.title }}{{ . | safeHTML}}{{ end }}
+                    {{ with .Site.Params.cardleft.subtitle }}{{ . | safeHTML}}{{ end }}
+                    <a class="btn btn-primary btn-block uppercase page-scroll" href="#services">Weitere Informationen</a>
+                    {{ range .Site.Params.cardleft.row }}
+                    <ul class="list-unstyled list-checks">
+                      {{ range .list }}
+                      <li>{{ .title | markdownify }}</li>
+                      {{ end }}
+                    </ul>
+                    {{ end }}
+                    {{ if .Site.Params.cardleft.fineprint }} <span class="fine-print" > {{ with .Site.Params.cardleft.fineprint }}{{ . | safeHTML}}{{ end }}</span>{{ end }}
+                  </li>
+                </ul>
+              </div>
+              <!-- col-md-4 -->
+              <div class="col-lg-3 col-md-4 col-md-height col-bottom vermietung">
+                <ul class="list-unstyled list-inline list-cards" >
+                  <li class="card js-card-rent text-center">
+                    {{ with .Site.Params.cardright.title }}{{ . | safeHTML}}{{ end }}
+                    {{ with .Site.Params.cardright.subtitle }}{{ . | safeHTML}}{{ end }}
+                    <a class="btn btn-primary btn-block uppercase" href="/verkaufen">Weitere Informationen</a>
+
+                    {{ range .Site.Params.cardright.row }}
+                    <ul class="list-unstyled list-checks">
+                      {{ range .list }}
+                      <li>{{ .title | markdownify }}</li>
+                      {{ end }}
+                    </ul>
+                    {{ end }}
+                    {{ if .Site.Params.cardright.fineprint }} <span class="fine-print" > {{ with .Site.Params.cardright.fineprint }}{{ . | safeHTML}}{{ end }}</span>{{ end }}
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-5 col-md-4 col-sm-4 col-sx-5 vermietung text-left">
+                <div class="top-margin">
+                  <small class="top">Bekannt aus</small><br>
+                  <img alt="bekannt aus" src="{{ .Site.BaseURL }}img/icons/bekant.png" class="img-responsive">
+                </div>
+              </div>
+              <!-- col-md-4 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>

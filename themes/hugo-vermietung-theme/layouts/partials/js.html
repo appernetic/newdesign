@@ -1,0 +1,46 @@
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/lodash.min.js"></script>
+{{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+
+{{ "<!-- Plugin JavaScript -->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/nouislider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!--<script src="{{ .Site.BaseURL }}js/classie.js"></script>
+<script src="{{ .Site.BaseURL }}js/cbpAnimatedHeader.js"></script>-->
+{{ "<!-- Contact Form JavaScript -->" | safeHTML }}
+<!--<script src="{{ .Site.BaseURL }}js/jqBootstrapValidation.js"></script>
+<script src="{{ .Site.BaseURL }}js/contact_me.js"></script>-->
+{{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
+
+<!--<script src="{{ .Site.BaseURL }}js/numeral.min.js"></script> 
+<script src="{{ .Site.BaseURL }}js/numeral.language.de.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/vermietung.js"></script>-->
+<script src="{{ .Site.BaseURL }}js/vermietung.min.js"></script> 
+{{ template "_internal/google_analytics.html" . }}
+
+{{ range .Site.Params.custom_js }}
+    <script src="{{ . | absURL }}"></script>
+{{ end }}
+
+{{ "<!-- Google Code for C21 Vermarktung Conversion Page -->" | safeHTML }}
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 982724297;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "C92qCIOykGcQyd3M1AM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<div style="display:none">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/982724297/?label=C92qCIOykGcQyd3M1AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</div>

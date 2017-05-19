@@ -1,0 +1,236 @@
+# Site settings
+
+baseurl = "/"
+
+languageCode = "de"
+
+title = "Vermietung - Über Century 21"
+
+theme = "hugo-vermietung-theme"
+
+# Enter your tracking code to enable Google Analytics
+
+googleAnalytics = ""
+
+
+
+[params]
+
+
+
+# You can use Markdown syntax for urls [text](//url.to/source) or
+
+# most longer texts.
+
+#
+
+# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+
+# for more icons. The icons are represented by their corresponding
+
+# CSS class.
+
+
+
+# To provide some metadata for search engines feel free to add a few
+
+    # information about you and your website.
+
+name = "Vermietung Century 21"
+
+description = "Aktuelle Immobilien beim Partner für  Wohneigentum. Century 21 ist der Profi für den Verkauf und die Vermietung von Häuser und Wohnungen. Bereits seit 1971."
+
+
+
+# Since this template is static, the contact form uses www.formspree.io as a
+
+# proxy. The form makes a POST request to their servers to send the actual
+
+# email. Visitors can send up to a 1000 emails each month for free.
+
+    #
+
+    # What you need to do for the setup?
+
+    #
+
+    # - set your email address under 'email' below
+
+    # - upload the generated site to your server
+
+    # - send a dummy email yourself to confirm your account
+
+    # - click the confirm link in the email from www.formspree.io
+
+    # - you're done. Happy mailing!
+
+email = ""
+
+
+
+    # Link custom assets relative to /statuc
+
+    custom_css = []
+
+    custom_js  = []
+
+
+
+
+
+# Navigation
+
+[params.navigation]
+
+brand = "Über Century 21"
+
+services = "Vermietung"
+
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+
+    # Use the weight attribute to order your custom links. Uncomment the example
+
+    # below and replace the values with your own.
+
+#[[menu.prepend]]
+
+#	url = "http://www.century21.de/verkaufen"
+
+#	name = "Verkauf"
+
+#	weight = 0
+
+    # prepended links
+
+    #[[menu.prepend]]
+
+    #    url = "http://gohugo.io"
+
+    #    name = "Hugo"
+
+    #    weight = 10
+
+
+
+    # postpended links
+
+[[menu.postpend]]
+
+        url = "#services"
+
+        name = "Vermietung"
+
+        weight = 0
+
+    [[menu.postpend]]
+
+        url = "http://www.century21.de/verkaufen"
+
+        name = "Verkauf"
+
+        weight = 1
+
+[[menu.postpend]]
+
+url = "https://century21.de/list"
+
+        name = "Aktuelle Immobilien"
+
+        weight = 2
+
+[[menu.postpend]]
+
+url = "https://century21.de"
+
+        name = "Über Century 21"
+
+        weight = 3
+
+
+
+# Hero section
+
+[params.hero]
+
+# To change the background image of the hero, replace 'header-bg.jpg' in
+
+# the 'static/img' folder.
+
+title = "Sorgenfrei vermieten?"
+
+subtitle = "Zum Festpreis vermieten mit den Century 21 Immobilienprofis. Profitieren Sie von über 40 Jahren Erfahrung."
+
+
+
+
+
+#Left card
+
+[params.cardleft]
+
+title = "<strong>VERMIETEN</strong>"
+
+subtitle = "<h3 class='title-xxl'><sub>ab</sub> 490<sup>&euro;</sup></h3>"
+
+fineprint = ""
+
+
+
+#Right card
+
+[params.cardright]
+
+title = "<strong>VERKAUFEN</strong>"
+
+subtitle = "<h3 class='title-l-alt'>garantiert<sup>*</sup></h3>"
+
+fineprint = "* gem. individueller Vereinbarung mit dem Century 21 Makler abhängig von Region und Objekt.<br>"
+
+
+
+ [[params.cardleft.row]]
+
+
+
+            [[params.cardleft.row.list]]
+
+                title = "Exposé inkl. Mietanalyse"
+
+            [[params.cardleft.row.list]]
+
+                title = "Virtueller 360°-Rundgang"
+
+[[params.cardleft.row.list]]
+
+                title = "Vorselektion Bewerber"
+
+[[params.cardleft.row.list]]
+
+                title = "Haus &amp; Grund Mietvertrag"
+
+
+
+[[params.cardright.row]]
+
+
+
+            [[params.cardright.row.list]]
+
+                title = "Marktwertanalyse"
+
+            [[params.cardright.row.list]]
+
+                title = "Hochglanz Exposé"
+
+[[params.cardright.row.list]]
+
+                title = "Besichtigungen"
+
+[[params.cardright.row.list]]
+
+                title = "Erfolgsgarantie"
+
+[[params.cardright.row.list]]
+
+                title = "Begleitung bis zum Notar"

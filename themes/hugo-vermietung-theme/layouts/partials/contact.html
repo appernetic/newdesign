@@ -1,0 +1,39 @@
+{{ "<!-- Contact Section -->" | safeHTML }}
+<section id="contact" class="hidden-md hidden-lg bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Interessiert?</h2>
+        <h3 class="section-subheading text-muted">Fordern Sie unverbindlich weitere Informationen an:</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form  action="https://hooks.zapier.com/hooks/catch/325416/468i55/" method="POST" name="sentMessage" id="contactForm" novalidate>
+		  <input type="hidden" name="Typ" value="Vermietung" />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group"><label class="text-muted small">Ihr Name</label>
+                <input class="form-control" name="name" autofocus placeholder="Vorname / Nachname" type="text" />
+              </div>
+              <div class="form-group"><label class="text-muted small">Immobilie in</label>
+                <input class="form-control" name="ort" placeholder="PLZ / Ort" type="text" />
+              </div>
+              <div class="form-group"><label class="text-muted small">Telefon</label>
+                <input class="form-control" name="mobilnummer" placeholder="Mobilnummer" type="text" />
+              </div>
+              <div class="form-group"><label class="text-muted small">E-Mail</label>
+                <input class="form-control" name="email" placeholder="E-Mail-Adresse" type="email" />
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-primary btn-md">Jetzt Informationen anfordern</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

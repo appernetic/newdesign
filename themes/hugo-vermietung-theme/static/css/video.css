@@ -1,0 +1,290 @@
+.text-left {
+    text-align: left
+}
+
+section * {
+z-index: 2;
+}
+
+.card-header div {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+  padding-left: 0;
+}
+.card-header {
+  margin-left:-50px;
+  margin-top: 0;
+}
+.vermietung img {
+  padding-left:30px;
+}
+
+
+
+.top-margin {
+  padding-top:0;
+  margin-top: 0;
+  }
+
+.vermietung .list-cards {
+    margin: 40px auto 0;
+}
+
+.vermietung .promo-link {
+    text-decoration: none;
+    display: inline-block
+}
+
+.vermietung .card {
+    width: 100%;
+    height: 313px;
+    padding-top: 25px;
+    font-weight: 600;
+    transition: .3s transform ease, .3s box-shadow ease;
+    cursor: pointer;
+    position: relative;
+    color: #333;
+}
+
+
+.vermietung .card a:link {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.vermietung .card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0 0 80px 10px rgba(0, 0, 0, .15)
+}
+
+.vermietung .card .list-checks {
+    margin-top: 15px
+}
+
+.vermietung .card strong {
+    font-weight: 600;
+    letter-spacing: 1.3px
+}
+
+
+.vermietung .card .title-xxl {
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.vermietung .card .title-l-alt {
+    margin-left: -4px;
+    margin-bottom: 8px;
+    margin-top: 0
+}
+
+.vermietung .card .fine-print {
+    position: absolute;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  background-color: #f7f7f7;
+    left: 0;
+    right: 0
+}
+
+.fine-print {
+    font-size: 11px;
+    font-weight: 400;
+    color: #aaa;
+	line-height: 1.13333333rem;
+}
+
+.vermietung .card sup {
+    top: 30px;
+    font-size: 20px
+}
+
+.vermietung .card ul {
+    font-size: 13px;
+    text-align: left;
+    line-height: 20px
+}
+
+.vermietung .card a:link {
+    font-weight: 700
+}
+
+.vermietung small.top {
+    color: #999;
+    padding-left:30px;
+}
+
+.vermietung .bekannt-aus li.top {
+    display: block;
+    transform: translateY(-10px);
+    font-size: 12px;
+    margin-bottom: -13px;
+    padding-left: 9px;
+    color: #999;
+}
+
+.title-l-alt,
+.title-xl,
+.title-xxl {
+    font-size: 2.66666667rem;
+    margin-bottom: .33333333rem;
+    font-weight: 600;
+    line-height: 120%
+}
+
+.title-l-alt,
+.title-xxl {
+    font-size: 40px
+}
+
+.hero-title-lg {
+    font-size: 3.96666667rem;
+    margin-bottom: .33333333rem;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+    color: #EEA900;
+}
+
+.title {
+    letter-spacing: 1.3px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 600px;
+}
+
+.list-cards {
+    margin-left: 0
+}
+
+.list-cards>li {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+    margin-right: 20px;
+    margin-bottom: 0;
+    min-width: 275px;
+}
+
+.list-checks {
+    list-style-image: url(https://century21.de/vermieten/img/icons/checkmark.png);
+    margin-left: 19px
+}
+
+.alert li,
+sup {
+    vertical-align: top
+}
+
+sup {
+    top: 0
+}
+
+sub {
+    font-size: 20px;
+    margin-right: -8px;
+    bottom: 0
+}
+
+
+section.video {
+position:relative;
+height:500px;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+color:#FFF;
+}
+
+
+video {
+left: 0px;
+bottom: 0px;
+right: 0px;
+z-index: -100;
+width: 100%;
+min-height: 799.875px;
+min-width: 1422px;
+}
+
+.video #bgVideo {
+overflow: hidden;
+height: 580px;
+}
+
+.video #bgVideo > video {
+position: absolute !important;
+top: 0 !important;
+}
+.video > div, .video .v-center > div {
+display: table-cell;
+vertical-align: middle;
+margin-top: 0;
+margin-bottom: 0;
+float: none;
+}
+
+
+.video.v-center, .video .v-center {
+display: table;
+width: 100%;
+}
+.video .hero-unit {
+text-align: center;
+padding: 0;
+margin: 0;
+background-color: transparent;
+}
+
+.video .container {
+position: relative;
+z-index: 2;
+}
+
+.background {
+position: absolute;
+left: 0;
+top: 0px;
+right: 0;
+bottom: 0;
+background: 40% 40% no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+@media (max-width: 767px) {
+    .background {
+        background: url('/img/grass.jpg') center center / cover no-repeat;
+    }
+
+    #video_background {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .card-header {
+      margin-left:0;
+      margin-top: 40px;
+    }
+    .vermietung small.top {
+        color: #999;
+        padding-top:20px;
+        padding-left:0;
+    }
+    .vermietung img {
+      padding-left:0;
+    }
+    .top-margin {
+      padding-top:20px;
+      margin-top: 20px;
+      }
+  }
